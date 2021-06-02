@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zp-blog.github.io</id>
     <title>ZhouS数码的小站</title>
-    <updated>2021-06-02T03:33:59.485Z</updated>
+    <updated>2021-06-02T03:43:05.721Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zp-blog.github.io"/>
     <link rel="self" href="https://zp-blog.github.io/atom.xml"/>
@@ -10,6 +10,152 @@
     <logo>https://zp-blog.github.io/images/avatar.png</logo>
     <icon>https://zp-blog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, ZhouS数码的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[某度网盘限速？不存在的！]]></title>
+        <id>https://zp-blog.github.io/bdp-pj/</id>
+        <link href="https://zp-blog.github.io/bdp-pj/">
+        </link>
+        <updated>2020-06-24T03:34:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>目录<br>
+一、官方方法<br>
+1.购买VIP或SVIP（估计人人都不想要的就是这个）<br>
+2.在百度网盘APP里打开下载提速<br>
+3.百度企业网盘<br>
+4.爱奇艺万能联播<br>
+二、第三方工具<br>
+1.雷鸟下载<br>
+2.度云解析<br>
+3.KinhDown<br>
+4.亿寻<br>
+5.百度网盘下载管理器<br>
+6.百度网盘直链提取<br>
+7.网盘助手<br>
+8.PDown<br>
+9.速盘极速版<br>
+10.超级度盘<br>
+11.PJ版手机网盘<br>
+12.复活的Pandownload<br>
+13.盘下吧<br>
+14.6盘小羊版<br>
+15.度盘IDM满速下载工具<br>
+16.BDD度盘高速地址获取<br>
+三、IDM安装使用教程<br>
+1.安装IDM<br>
+2.把破解补丁替换到安装目录下</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>目录<br>
+一、官方方法<br>
+1.购买VIP或SVIP（估计人人都不想要的就是这个）<br>
+2.在百度网盘APP里打开下载提速<br>
+3.百度企业网盘<br>
+4.爱奇艺万能联播<br>
+二、第三方工具<br>
+1.雷鸟下载<br>
+2.度云解析<br>
+3.KinhDown<br>
+4.亿寻<br>
+5.百度网盘下载管理器<br>
+6.百度网盘直链提取<br>
+7.网盘助手<br>
+8.PDown<br>
+9.速盘极速版<br>
+10.超级度盘<br>
+11.PJ版手机网盘<br>
+12.复活的Pandownload<br>
+13.盘下吧<br>
+14.6盘小羊版<br>
+15.度盘IDM满速下载工具<br>
+16.BDD度盘高速地址获取<br>
+三、IDM安装使用教程<br>
+1.安装IDM<br>
+2.把破解补丁替换到安装目录下</p>
+<!-- more -->
+<p>一、官方方法<br>
+1.购买VIP或SVIP（估计人人都不想要的就是这个）<br>
+度盘会员还有超级会员<br>
+2.在百度网盘APP里打开下载提速<br>
+但是这个是类似于P2P加速，速度主要看资源热门度（我家千兆宽带也就10MB/S）<br>
+3.百度企业网盘<br>
+原本是可以送一个月黄金版的，现在已经没有了，下载500KB/S左右<br>
+新用户30天不限速，可一次性存储50G文件<br>
+所以只要不是大于50G的单个文件，就可以分批下载<br>
+百度企业网盘的套餐<br>
+价格倒是令人吐血......<br>
+4.爱奇艺万能联播<br>
+这个下载速度不稳定，有些可以有些不行<br>
+而且只能下单个文件，不能下文件夹，真是令人吐血！</p>
+<!-- more -->
+<p>二、第三方工具<br>
+1.雷鸟下载<br>
+据说可以到60MB/S！！！完全免费！！！可批量下载<br>
+雷鸟下载<br>
+下载地址：https://thunderbird.lanzous.com/b01bdspaj<br>
+2.度云解析<br>
+就是这么简单的一个网址<br>
+http://http://pan.naifei.cc<br>
+只要在此地址后面加上网盘分享链接，即可解析使用IDM下载<br>
+速度达29.9Mb/s（1000M宽带），解析无限制<br>
+同时还有软件+油猴脚本版本<br>
+油猴：https://www.tampermonkey.net/index.php?version=4.11&amp;ext=dhdg<br>
+脚本大全：greayfork.org<br>
+3.KinhDown<br>
+可批量下载，单个文件下载速度15Mb/s左右<br>
+KinhDown<br>
+支持IDM下载<br>
+4.亿寻<br>
+这个估计大家就很熟悉了，有一定限制<br>
+但下载速度根据文件热门程度，最高可达带宽满速<br>
+这里测试为9Mb/s<br>
+亿寻经典CMD<br>
+5.百度网盘下载管理器<br>
+属于油猴脚本，安装即可使用<br>
+不需调用任何第三方下载器，速度可达3Mb/s<br>
+个人觉得一般<br>
+6.百度网盘直链提取<br>
+同样是油猴脚本，复制解析链接利用IDM进行下载，单个文件下载速度1.5Mb/s<br>
+7.网盘助手<br>
+还是油猴脚本，下载小文件速度竟然飙升到29Mb/s<br>
+但实际下载大文件，速度也在1Mb/s左右<br>
+可以连接IDM<br>
+8.PDown<br>
+下载小文件的东东，单个文件300Kb/S<br>
+9.速盘极速版<br>
+既有电脑端，又有手机端<br>
+不过是付费下载，3元3G，不是很划算（可以考虑共享X）<br>
+建议土豪使用<br>
+10.超级度盘<br>
+这个玩意是给手机端用的，速度100KB/S<br>
+11.PJ版手机网盘<br>
+速度可达500Kb/s，还可倍速播放等<br>
+12.复活的Pandownload<br>
+复活版即有电脑端也有手机端<br>
+Pandownload 4.0.4复活版<br>
+还有手机版<br>
+13.盘下吧<br>
+手机网盘不限速下载神器<br>
+无需登录，直接解析分享链接。速度可达7Mb/s<br>
+默认下载路径在，storage/emulated/0<br>
+14.6盘小羊版<br>
+也是一款很好的下载工具<br>
+这款软件外表看上去就是一个6盘的PC端，但是软件其实内嵌了毒盘加速器功能。【新建】窗口就可以看到他支持离线磁力、电驴、毒盘分享链接下载。只要将链接与提取码复制进去，点击【提交】，软件就可以解析分享的文件。<br>
+6盘小羊版<br>
+下载地址：https://www.90pan.com/n41087<br>
+15.度盘IDM满速下载工具<br>
+度盘IDM高速下载神器是简单好用的百度云链接满速下载工具，现在的百度云，免费的都没办法下载，那么如何才能免费享受飞一样下载速度，全新接口方式，调用主页面返回SVIP接口下载地址。使用本工具，可快速进行调用IDM高速下载，方便快捷，界面友好，快速进行下载，具体效果如何，小伙伴们可以下载感受一下，应该还是挺好的！<br>
+https://www.sdbeta.com/wg/2020/0831/236115.html<br>
+度盘IDM满速下载工具<br>
+16.BDD度盘高速地址获取<br>
+BDD度盘高速地址获取工具能够轻松获取高速下载地址，只需要输入你的百度网盘分享链接和提取码，然后点击获取直链到IDM下载，然后就能够直接获取直链啦，复制就能够使用进行下载，非常的简单，不用安装，解压即可使用，有需要的朋友不要错过了！<br>
+BBD度盘高速地址获取工具<br>
+下载地址：https://www.sdbeta.com/wg/2020/0831/236116.html</p>
+<!-- more -->
+<p>三、IDM安装使用教程<br>
+1.安装IDM<br>
+2.把破解补丁替换到安装目录下<br>
+安装目录<br>
+好了今天的文章就到这里了，如果你细化的话，麻烦来个素质三联和关注，OK各位我们下期再见！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[使用Gridea搭建静态博客网站]]></title>
         <id>https://zp-blog.github.io/gridea-01/</id>
