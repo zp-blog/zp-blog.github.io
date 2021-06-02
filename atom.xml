@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zp-blog.github.io</id>
     <title>ZhouS数码的小站</title>
-    <updated>2021-06-02T03:50:04.282Z</updated>
+    <updated>2021-06-02T03:52:20.953Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zp-blog.github.io"/>
     <link rel="self" href="https://zp-blog.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2021, ZhouS数码的小站</rights>
     <entry>
         <title type="html"><![CDATA[虚拟机安装 macOS 11 Big Sur Beta 体验版]]></title>
-        <id>https://zp-blog.github.io/yYync_g8r/</id>
-        <link href="https://zp-blog.github.io/yYync_g8r/">
+        <id>https://zp-blog.github.io/post/yYync_g8r/</id>
+        <link href="https://zp-blog.github.io/post/yYync_g8r/">
         </link>
         <updated>2021-06-02T03:45:38.000Z</updated>
         <summary type="html"><![CDATA[<p>VMware Workstation Pro ：https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html  相关激活密钥请自行网上搜索试用。<br>
@@ -75,8 +75,8 @@ board-id = &quot;Mac-E1008331FDC96864&quot;</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[某度网盘限速？不存在的！]]></title>
-        <id>https://zp-blog.github.io/bdp-pj/</id>
-        <link href="https://zp-blog.github.io/bdp-pj/">
+        <id>https://zp-blog.github.io/post/bdp-pj/</id>
+        <link href="https://zp-blog.github.io/post/bdp-pj/">
         </link>
         <updated>2020-06-24T03:34:54.000Z</updated>
         <summary type="html"><![CDATA[<p>目录<br>
@@ -221,8 +221,8 @@ BBD度盘高速地址获取工具<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[使用Gridea搭建静态博客网站]]></title>
-        <id>https://zp-blog.github.io/gridea-01/</id>
-        <link href="https://zp-blog.github.io/gridea-01/">
+        <id>https://zp-blog.github.io/post/gridea-01/</id>
+        <link href="https://zp-blog.github.io/post/gridea-01/">
         </link>
         <updated>2019-06-06T03:27:36.000Z</updated>
         <summary type="html"><![CDATA[<p>示例网站：zp-blog.github.io<br>

@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>搜索 | ZhouS数码的小站</title>
+<title>使用Gridea搭建静态博客网站 | ZhouS数码的小站</title>
 
 <link rel="shortcut icon" href="https://zp-blog.github.io/favicon.ico?v=1622605937817">
 
@@ -35,21 +33,11 @@
 <!--<script src="media/scripts/index.js"></script>-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.0/dist/fuse.basic.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.3/ejs.min.js"></script>
-    <script src="https://zp-blog.github.io/media/gridea-search/gridea-search.js"></script>
-    <script src="https://zp-blog.github.io/media/gridea-search/result-template.ejs" type="text/ejs"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
-
 <body>
-    <style>
-        .searched-keyword {
-            background-color: yellow;
-            color: red;
-        }
-    </style>
-    <div class="main gt-bg-theme-color-first">
-        <nav class="navbar navbar-expand-lg">
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -116,16 +104,49 @@
         }
     }
 </script>
-        <div id="gridea-search-result" data-update="1622605937817">
-            <div class="searching" style="font-size: 18px; margin-top: 50px;">
-                <i class="fa fa-sync-alt fa-spin"></i>&nbsp;&nbsp;搜索中......
-                <br><br>
-                <span style="font-size: 65%; color: #aaa">第一次搜索可能需要耗费较长时间构建索引，请耐心等待...</span>
-            </div>
-            <div class="no-result" style="display:none; font-size: 20px; margin-top: 50px;">
-                <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;未搜索到相关文章，请更换关键词
-            </div>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    使用Gridea搭建静态博客网站
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2019-06-06 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>示例网站：zp-blog.github.io<br>
+1.注册一个GitHub账户<br>
+https://github.com/join</p>
+<!-- more -->
+<p>2.创建一个GitHub项目，点击Start a Project<br>
+然后我们创建一个仓库，用于存放代码（放心，不用你写代码，Gridea会把代码存进来），xxx是你的GitHub用户名，Repository name为用户名.github.io，设置为public，下面的不用写</p>
+<!-- more -->
+<p>3.设置KEY<br>
+我们点击右上角的头像，点击Settings<br>
+找到Developer Settings，点进去，找到Personal Access Token，点击Generate new Token<br>
+Note设置为用户名，勾选repo，提交后复制密钥，推出了就要重新申请了。</p>
+<!-- more -->
+<p>4.配置Gridea<br>
+下载 https://github.com/getgridea/gridea 并安装<br>
+打开gridea，找到远程，平台选择GitHub Pages，域名和仓库名称填入用户名.github.io，分值为master，仓库用户名填写GitHub用户名，令牌则为刚刚获取到的KEY。<br>
+我们点击保存，再点击检测远程连接，如果成功，则点击同步，然后打开浏览器，输入xxx(用户名).github.io，就可以访问自己的网站了！</p>
+<p>下一篇文章将会为大家带来更多Gridea技巧！</p>
+
+                </div>
+            </article>
         </div>
+
+        
+
+        
+
+        
+
+        
+
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">哔哩哔哩ZhouS数码平时发文章的小站</div>
     <div class="social-container">
@@ -161,6 +182,6 @@
 </script>
 
     </div>
+</div>
 </body>
-
 </html>
