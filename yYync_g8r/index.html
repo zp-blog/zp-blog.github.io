@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>ZhouS数码的小站</title>
+<title>虚拟机安装 macOS 11 Big Sur Beta 体验版 | ZhouS数码的小站</title>
 
 <link rel="shortcut icon" href="https://zp-blog.github.io/favicon.ico?v=1622605688351">
 
@@ -33,11 +33,11 @@
 <!--<script src="media/scripts/index.js"></script>-->
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -104,118 +104,88 @@
         }
     }
 </script>
-
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://zp-blog.github.io/yYync_g8r/">
-                            <span class="post-title gt-c-content-color-first">虚拟机安装 macOS 11 Big Sur Beta 体验版</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        VMware Workstation Pro ：https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html  相关激活密钥请自行网上搜索试用。
-macOS 11Big Sur Beta CDR镜像：https://pan.baidu.com/s/1Cy3j5qotEBLH1GzTQRF41Q 提取码: fpj8
-必须核对SHA-2：11B8E1904F181E55D56532232D83795CDABB976F6EBBA980A1290778FF95136
-为什么核对哈希值：百度网盘下载大文件有一定概率损坏文件，文件损坏后导致用户在安装部署时可能失败。
-
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2021-06-02 ·
-                        </time>
-                        
-                    </div>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    虚拟机安装 macOS 11 Big Sur Beta 体验版
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-06-02 ·
+                    </time>
+                    
                 </div>
-                
+                <div class="post-content">
+                    <p>VMware Workstation Pro ：https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html  相关激活密钥请自行网上搜索试用。<br>
+macOS 11Big Sur Beta CDR镜像：https://pan.baidu.com/s/1Cy3j5qotEBLH1GzTQRF41Q 提取码: fpj8<br>
+必须核对SHA-2：11B8E1904F181E55D56532232D83795CDABB976F6EBBA980A1290778FF95136<br>
+为什么核对哈希值：百度网盘下载大文件有一定概率损坏文件，文件损坏后导致用户在安装部署时可能失败。</p>
+<!-- more -->
+<p>一、安装Unlocker（自己去找安装包吧，实在找不动了）<br>
+1.正常安装虚拟机并激活然后打开任务管理器将VMware的服务项全部停止，选中后点击右键即可看到停止。<br>
+2.下载并完整解压 Unlocker 至桌面，然后右键点击win-install.cmd并选择使用管理员权限运行这个批处理。<br>
+3.请注意本工具运行过程中需要连接VMware官网下载部分组件，因网络问题可能下载时间较长请耐心等待。<br>
+4.本工具成功下载辅助组件并解锁VMware后会自动启动相关服务，如果出现异常用户也可以直接重启系统。<br>
+5.完成后打开VMware虚拟机点击文件新建虚拟机选项，然后先不要挂载镜像选择稍后再提供操作系统镜像。<br>
+6.接下来在选择操作系统时就可以看到苹果系统的选项啦，配置完毕后再挂载苹果系统镜像即可执行安装喽。</p>
+<!-- more -->
+<p>二、安装配置<br>
+类型选择高级<br>
+选择镜像是把下方CD-ROM镜像改成所有文件<br>
+打开cdr文件<br>
+选择安装位置<br>
+操作系统选MAC OS X10.16<br>
+虚拟机名称和位置都可以自选<br>
+处理器核心以及内存方面越大越好，不然虚拟机会非常卡<br>
+分配内存<br>
+网络选择第二项<br>
+I/O控制器选第二项<br>
+磁盘选择SATA,创建新虚拟磁盘，并分配大小<br>
+选择磁盘文件位置<br>
+打开刚刚我们选择的虚拟机安装目录，比如蓝点网选择的是D:\VMware\Mac，然后找到 虚拟机名称.vmx  文件。<br>
+使用记事本或代码编辑器打开 VMX 文件，然后在结尾粘贴下面这三行代码，粘贴完成后直接保存配置文件即可。<br>
+smbios.reflectHost = &quot;TRUE&quot;<br>
+hw.model = &quot;MacBookPro16,1&quot;<br>
+board-id = &quot;Mac-E1008331FDC96864&quot;</p>
+<!-- more -->
+<p>二、配置磁盘<br>
+1.完成上述修改配置后即可开启虚拟机，接下来我们需要按照以下步骤对虚拟机进行配置，然后才能进入安装过程。<br>
+2.语言选简体中文<br>
+3.选择磁盘工具<br>
+4.在这里选择VMware虚拟硬盘并点击抹掉<br>
+5.将格式修改为APFS<br>
+6.完成抹掉后点击左上角磁盘工具退出<br>
+7.好了这里点击安装macOS进入安装进程<br>
+8.选择我们刚刚抹掉的硬盘即可，接下来安装会持续半个小时左右请耐心等待</p>
+<!-- more -->
+<p>三、收尾工作<br>
+安装完成后配置好一大堆选项<br>
+进入桌面后点击右上角Install macOS Beta选择推出<br>
+点击VMware虚拟机上的虚拟机---安装VMware Tools然后会弹出如下界面，双击安装<br>
+安装过程会触发多个安全限制，请按照提示转到设置里的安全设置里解锁，最后完成安装。<br>
+完成安装后必须重启系统，然后点击虚拟机上的进入全屏模式，macOS即可全屏显示<br>
+恭喜宝宝们完成了安装！<br>
+写得累死了......</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://zp-blog.github.io/bdp-pj/" class="post-title gt-a-link">
+                    某度网盘限速？不存在的！
+                </a>
             </div>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://zp-blog.github.io/bdp-pj/">
-                            <span class="post-title gt-c-content-color-first">某度网盘限速？不存在的！</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        目录
-一、官方方法
-1.购买VIP或SVIP（估计人人都不想要的就是这个）
-2.在百度网盘APP里打开下载提速
-3.百度企业网盘
-4.爱奇艺万能联播
-二、第三方工具
-1.雷鸟下载
-2.度云解析
-3.KinhDown
-4.亿寻
-5.百度网盘下载管理器
-6.百度网盘直链提取
-7.网盘助手
-8.PDown
-9.速盘极速版
-10.超级度盘
-11.PJ版手机网盘
-12.复活的Pandownload
-13.盘下吧
-14.6盘小羊版
-15.度盘IDM满速下载工具
-16.BDD度盘高速地址获取
-三、IDM安装使用教程
-1.安装IDM
-2.把破解补丁替换到安装目录下
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-06-24 ·
-                        </time>
-                        
-                    </div>
-                </div>
-                
-                    <a href="https://zp-blog.github.io/bdp-pj/" class="post-feature-image"
-                       style="background-image: url('https://zp-blog.github.io/post-images/bdp-pj.webp')">
-                    </a>
-                
-            </div>
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://zp-blog.github.io/gridea-01/">
-                            <span class="post-title gt-c-content-color-first">使用Gridea搭建静态博客网站</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        示例网站：zp-blog.github.io
-1.注册一个GitHub账户
-https://github.com/join
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2019-06-06 ·
-                        </time>
-                        
-                    </div>
-                </div>
-                
-            </div>
         
-    </div>
-</div>
 
-        <div class="pagination-container">
-    
-    
-</div>
-
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">哔哩哔哩ZhouS数码平时发文章的小站</div>
